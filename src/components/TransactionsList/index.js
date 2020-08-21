@@ -25,7 +25,7 @@ const PageButtons = styled.div`
 `
 
 const Arrow = styled.div`
-  color: #2f80ed;
+  color: #5463f8;
   opacity: ${props => (props.faded ? 0.3 : 1)};
   padding: 0 20px;
   user-select: none;

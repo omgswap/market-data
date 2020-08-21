@@ -16,18 +16,18 @@ const Header = styled(Panel)`
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   align-items: center;
-  padding: 24px;
+  padding: 16px;
 
   @media (max-width: 40em) {
-    padding: 18px;
+    padding: 16px;
   }
 `
 
 const TokenSelect = styled(Select)`
-  width: 180px;
+  width: 160px;
 
   @media screen and (max-width: 40em) {
-    width: 160px;
+    width: 150px;
   }
 `
 
@@ -66,13 +66,13 @@ const MigrateBanner = styled.div`
   padding: 12px 0;
   display: flex;
   justify-content: center;
-  background-color: rgba(235, 235, 235, 0.6);
+  background-color: #3447ff;
   color: rgba(245, 245, 245, 11);
   font-weight: 400;
   text-align: center;
   a {
     color: rgba(255, 255, 255, 1);
-    text-decoration: underline;
+    text-decoration: none;
   }
 `
 
@@ -122,12 +122,12 @@ export default function NavHeader({ exchanges, setCurrencyUnit, currencyUnit }) 
     <>
       <MigrateBannerSmall>
         <Link href="https://omgswap.link" external={true}>
-          <b>click here ↗</b>
+          <b>Ǒmega Protocol Money (OPM) IDO Sales Live</b>
         </Link>
       </MigrateBannerSmall>
       <MigrateBannerLarge>
           <Link href="https://omgswap.link" external={true}>
-          <b>click here ↗</b>
+          <b>Ǒmega Protocol Money (OPM) IDO Sales Live</b>
         </Link>
       </MigrateBannerLarge>
       <Header bg={['transparent', 'transparent']}>

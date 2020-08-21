@@ -82,9 +82,9 @@ const OverviewChart = ({ data, chartOption, currencyUnit, monthlyHistory, weekly
               name={'Total Liquidity' + (currencyUnit === 'USD' ? ' (USD)' : ' (ETH)')}
               dataKey={currencyUnit === 'USD' ? 'usdLiquidity' : 'ethLiquidity'}
               yAxisId={0}
-              fill="#FE6DDE"
+              fill="#5463f8"
               opacity={'0.4'}
-              stroke="#FE6DDE"
+              stroke="#5463f8"
             />
           </AreaChart>
         </ResponsiveContainer>
@@ -153,9 +153,9 @@ const OverviewChart = ({ data, chartOption, currencyUnit, monthlyHistory, weekly
                   ? 'weeklyVolumeETH'
                   : 'dailyEthVolume'
               }
-              fill="#FE6DDE"
+              fill="#5463f8"
               opacity={'0.4'}
-              stroke="#FE6DDE"
+              stroke="#5463f8"
             />
           </BarChart>
         </ResponsiveContainer>

@@ -26,7 +26,7 @@ const ThemedBackground = styled(Box)`
   height: 365px;
   z-index: -1;
   top: 0;
-  width: 100vw;
+  width: 100%;
 
   @media screen and (max-width: 64em) {
     height: 679px;
@@ -116,7 +116,7 @@ const ListOptions = styled(Flex)`
   @media screen and (max-width: 64em) {
     display: none;
   }
-  
+
 `
 
 const OptionsWrappper = styled(Flex)`
@@ -188,8 +188,9 @@ const TokenGroup = styled.div`
 
 const BuyButton = styled(Box)`
   &:hover {
-    background-color: #2f80edab;
+    background-color: #5463F8ab;
     cursor: pointer;
+    font-weight: 600;
   }
 
   display: flex;
@@ -198,7 +199,7 @@ const BuyButton = styled(Box)`
   height: 50px;
   font-size: 16px;
   color: white;
-  background-color: #2f80ed;
+  background-color: #5463F8;
   border-radius: 32px;
   font-weight: 600;
   width: 46%;
@@ -260,7 +261,7 @@ const PricePanelMobile = styled(Panel)`
 
 const AddressLink = styled.a`
   font-weight: 500;
-  color: #2f80ed;
+  color: #5463F8;
   text-decoration: none;
 `
 

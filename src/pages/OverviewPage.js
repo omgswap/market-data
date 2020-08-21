@@ -22,7 +22,7 @@ const ThemedBackground = styled(Box)`
   height: 411px;
   z-index: -1;
   top: 0;
-  width: 100vw;
+  width: 100%;
 
   @media screen and (max-width: 64em) {
     height: 559px;
@@ -171,11 +171,11 @@ export const OverviewPage = function({
 
   return (
     <div style={{ marginTop: '0px' }}>
-      <ThemedBackground bg="black" />
+      <ThemedBackground bg="#727FFF" />
       {globalData ? (
         <DashboardWrapper>
           <TokenHeader>
-            <div>Uniswap Overview</div>
+            <div>OMGSwap Overview</div>
           </TokenHeader>
           <OverviewDashboard mx="auto" px={[0, 3]}>
             <TopPanel rounded color="white" p={24} style={{ gridArea: 'volume' }}>

@@ -7,14 +7,20 @@ import 'typeface-inter'
 import theme from './theme'
 
 export const GlobalStyles = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,200,300,400,500,600,700,800,900');
+html { font-family: 'Source Sans Pro', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Source Sans Pro var', sans-serif; }
+}
   :root {
     --root-font-size: 16px;
-    --font-family: Inter UI;
-    --system-ui: -apple-system, BlinkMacSystemFont, Segoe UI,
+    --font-family: Source Sans Pro;
+    --system-ui: Source Sans Pro,apple-system, BlinkMacSystemFont, Segoe UI,
     Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
     Segoe UI Symbol;
 
     /* greys */
+    --c-violet: #727FFF;
     --c-white: #fff;
     --c-alabaster: #FBFBFB;
     --c-zircon: #e1e1e1;

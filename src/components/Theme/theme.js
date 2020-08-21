@@ -47,7 +47,7 @@ export default {
   Link: {
     textDecoration: 'none',
     ':hover': {
-      textDecoration: 'underline'
+      textDecoration: 'none'
     }
   }
 }
