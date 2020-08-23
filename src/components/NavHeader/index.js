@@ -66,7 +66,7 @@ const MigrateBanner = styled.div`
   padding: 12px 0;
   display: flex;
   justify-content: center;
-  background-color: #3447ff;
+  background-color: rgba(255, 255, 255, 0.2);
   color: rgba(245, 245, 245, 11);
   font-weight: 400;
   text-align: center;
@@ -121,13 +121,13 @@ export default function NavHeader({ exchanges, setCurrencyUnit, currencyUnit }) 
   return (
     <>
       <MigrateBannerSmall>
-        <Link href="https://omgswap.link" external={true}>
-          <b>Ǒmega Protocol Money (OPM) IDO Sales Live</b>
+        <Link href="https://odex.link" external={true}>
+          <b>Ǒmega Protocol Money (OPM) Trading Started</b>
         </Link>
       </MigrateBannerSmall>
       <MigrateBannerLarge>
-          <Link href="https://omgswap.link" external={true}>
-          <b>Ǒmega Protocol Money (OPM) IDO Sales Live</b>
+          <Link href="https://odex.link" external={true}>
+          <b>Ǒmega Protocol Money (OPM) Trading Started</b>
         </Link>
       </MigrateBannerLarge>
       <Header bg={['transparent', 'transparent']}>

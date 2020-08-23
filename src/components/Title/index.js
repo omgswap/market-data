@@ -18,11 +18,7 @@ export default function Title() {
     <TitleWrapper onClick={() => history.push('/')}>
       <Flex alignItems="center">
         <Text fontSize="1.5rem" lineHeight="1">
-          OMGSwap Market Data
-        </Text>
-
-        <Text fontWeight={500} mx="0.5rem" color="white" lineHeight="1.5rem" style={{ textDecorationColor: 'blue' }}>
-          Info
+          <img src={require('./logo.svg')} alt="Logo" />
         </Text>
       </Flex>
     </TitleWrapper>
