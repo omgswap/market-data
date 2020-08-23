@@ -44,7 +44,7 @@ const NavRight = styled.div`
 `
 
 const LinkText = styled(RouterLink)`
-  font-weight: 500;
+  font-weight: 600;
   color: white;
   margin-left: 1em;
   opacity: ${props => (props.selected ? 0 : 0.6)};

@@ -69,7 +69,7 @@ const FloatRight = styled.div`
   margin-top: 1rem;
   font-size: 10px;
   color: #333333;
-  font-weight: 500;
+  font-weight: 600;
 `
 
 const TokenHeader = styled(Box)`
@@ -99,7 +99,7 @@ const TokenHeader = styled(Box)`
 `
 
 const TextOption = styled(Text)`
-  font-weight: 500;
+  font-weight: 600;
   &:hover {
     cursor: pointer;
   }
@@ -112,6 +112,7 @@ const ListOptions = styled(Flex)`
   justify-content: space-between;
   align-items; center;
   width: 100%;
+  box-shadow: rgba(84, 99, 248, 0.1) 0px 4px 20px;
 
   @media screen and (max-width: 64em) {
     display: none;
@@ -164,7 +165,7 @@ const EmojiWrapper = styled.span`
 `
 
 const ChartWrapper = styled(Panel)`
-  boxshadow: 0px 4px 20px rgba(239, 162, 250, 0.15);
+  boxshadow: 0px 4px 20px rgba(84, 99, 248, 0.1);
 
   @media screen and (max-width: 64em) {
     margin-bottom: 20px;
@@ -253,6 +254,7 @@ const PricePanelMobile = styled(Panel)`
   justify-content: space-between;
   border-radius: 20px;
   margin-top: 20px;
+  margin-bottom: 20px;
 
   @media screen and (min-width: 64em) {
     display: none;
@@ -260,7 +262,7 @@ const PricePanelMobile = styled(Panel)`
 `
 
 const AddressLink = styled.a`
-  font-weight: 500;
+  font-weight: 600;
   color: #5463F8;
   text-decoration: none;
 `
@@ -350,7 +352,7 @@ export const ExchangePage = function({
           <FourByFour
             topLeft={<Hint color="textLight">Price</Hint>}
             bottomLeft={
-              <Text fontSize={24} lineHeight={1.4} fontWeight={500}>
+              <Text fontSize={24} lineHeight={1.4} fontWeight={600}>
                 {!isNaN(price) && !isNaN(invPrice)
                   ? currencyUnit === 'USD'
                     ? '$' + formattedNum(priceUSD, true)
@@ -396,7 +398,7 @@ export const ExchangePage = function({
             <FourByFour
               topLeft={<Hint color="textLight">Volume (24hrs)</Hint>}
               bottomLeft={
-                <Text fontSize={24} lineHeight={1} fontWeight={500}>
+                <Text fontSize={24} lineHeight={1} fontWeight={600}>
                   {!isNaN(tradeVolumeUSD) && !isNaN(tradeVolume)
                     ? currencyUnit === 'USD'
                       ? '$' + formattedNum(tradeVolumeUSD, true)
@@ -422,7 +424,7 @@ export const ExchangePage = function({
             <FourByFour
               topLeft={<Hint color="textLight">Total Liquidity</Hint>}
               bottomLeft={
-                <Text fontSize={24} lineHeight={1} fontWeight={500}>
+                <Text fontSize={24} lineHeight={1} fontWeight={600}>
                   {!isNaN(ethLiquidity) && !isNaN(price) && !isNaN(priceUSD)
                     ? currencyUnit !== 'USD'
                       ? 'Ξ ' + formattedNum(ethLiquidity * 2)
@@ -444,7 +446,7 @@ export const ExchangePage = function({
             <FourByFour
               topLeft={<Hint color="textLight">Transactions (24hrs)</Hint>}
               bottomLeft={
-                <Text fontSize={24} lineHeight={1} fontWeight={500}>
+                <Text fontSize={24} lineHeight={1} fontWeight={600}>
                   {!isNaN(oneDayTxs) ? oneDayTxs : '-'}
                 </Text>
               }
@@ -455,7 +457,7 @@ export const ExchangePage = function({
             rounded
             bg="white"
             area="statistics"
-            style={{ boxShadow: '0px 4px 20px rgba(239, 162, 250, 0.15)', borderRadius: '10px' }}
+            style={{ boxShadow: '0px 4px 20px rgba(84, 99, 248, 0.1)', borderRadius: '10px' }}
           >
             <Box p={24}>
               <Flex height={18} alignItems="center" justifyContent="space-between">
@@ -534,10 +536,10 @@ export const ExchangePage = function({
               <FloatRight>UTC±00:00</FloatRight>
             </Box>
           </ChartWrapper>
-          <Panel rounded bg="white" area="exchange" style={{ boxShadow: '0px 4px 20px rgba(239, 162, 250, 0.15)' }}>
+          <Panel rounded bg="white" area="exchange" style={{ boxShadow: '0px 4px 20px rgba(84, 99, 248, 0.1)' }}>
             <Box p={24}>
               <Flex height={18} alignItems="center" justifyContent="space-between">
-                <Flex alignItems="center" justifyContent="space-between" style={{ fontWeight: 500, height: '36px' }}>
+                <Flex alignItems="center" justifyContent="space-between" style={{ fontWeight: 600, height: '36px' }}>
                   <div>Exchange</div>
                 </Flex>
                 <AddressLink href={'https://omgswap.com/swap/' + tokenAddress} target="_blank">
@@ -629,7 +631,7 @@ export const ExchangePage = function({
               </EmojiWrapper>
             </AccountSearchWrapper>
           </ListOptions>
-          <Panel rounded bg="white" area="transactions" style={{ marginTop: belowMedium ? '20px' : '' }}>
+          <Panel rounded bg="white" area="transactions" style={{ marginTop: belowMedium ? '20px' : '', marginBottom: belowMedium ? '20px' : '' }}>
             {exchangeAddress ? (
               <TransactionsList
                 currencyUnit={currencyUnit}

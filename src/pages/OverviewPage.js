@@ -32,7 +32,7 @@ const ThemedBackground = styled(Box)`
 `
 
 const TopPanel = styled(Panel)`
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.05);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -85,7 +85,7 @@ const TokenHeader = styled(Box)`
 `
 
 const ChartWrapper = styled(Panel)`
-  boxshadow: 0px 4px 20px rgba(239, 162, 250, 0.15);
+  box-shadow: 0px 4px 20px rgba(114, 127, 255, 0.05);
 
   @media screen and (max-width: 64em) {
     margin-bottom: 20px;
@@ -151,7 +151,7 @@ const FloatRight = styled.div`
   margin-top: 1rem;
   font-size: 10px;
   color: #333333;
-  font-weight: 500;
+  font-weight: 600;
 `
 
 export const OverviewPage = function({
@@ -182,7 +182,7 @@ export const OverviewPage = function({
               <FourByFour
                 topLeft={<Hint color="textLight">Volume (24hrs)</Hint>}
                 bottomLeft={
-                  <Text fontSize={24} lineHeight={1} fontWeight={500}>
+                  <Text fontSize={24} lineHeight={1} fontWeight={600}>
                     {currencyUnit === 'USD'
                       ? '$' + formattedNum(parseFloat(globalData.dailyVolumeUSD), true)
                       : 'Ξ ' + formattedNum(parseFloat(globalData.dailyVolumeETH))}
@@ -206,7 +206,7 @@ export const OverviewPage = function({
               <FourByFour
                 topLeft={<Hint color="textLight">Total Liquidity</Hint>}
                 bottomLeft={
-                  <Text fontSize={24} lineHeight={1} fontWeight={500}>
+                  <Text fontSize={24} lineHeight={1} fontWeight={600}>
                     {globalData
                       ? currencyUnit !== 'USD'
                         ? 'Ξ ' + formattedNum(globalData.liquidityEth)
@@ -232,7 +232,7 @@ export const OverviewPage = function({
               <FourByFour
                 topLeft={<Hint color="textLight">Transactions (24hrs)</Hint>}
                 bottomLeft={
-                  <Text fontSize={24} lineHeight={1} fontWeight={500}>
+                  <Text fontSize={24} lineHeight={1} fontWeight={600}>
                     {formattedNum(globalData.txCount)}
                   </Text>
                 }
@@ -292,7 +292,7 @@ export const OverviewPage = function({
                 </Flex>
               </Box>
               <Divider />
-              <Box p={24} style={{ boxShadow: '0px 4px 20px rgba(239, 162, 250, 0.15)', borderRadius: '10px' }}>
+              <Box p={24} style={{ boxShadow: '0px 4px 20px rgba(114, 127, 255, 0.05)', borderRadius: '10px' }}>
                 {uniswapHistory && uniswapHistory.length > 0 ? (
                   <OverviewChart
                     data={uniswapHistory}

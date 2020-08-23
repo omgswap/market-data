@@ -42,7 +42,7 @@ export default {
   Button: {
     fontFamily: `var(--font-family), var(--system-ui)`,
     borderRadius: 40,
-    fontWeight: 500
+    fontWeight: 600
   },
   Link: {
     textDecoration: 'none',

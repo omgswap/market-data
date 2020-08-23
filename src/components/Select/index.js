@@ -30,7 +30,7 @@ const CustomMenu = styled.div`
   background-color: white;
   position: absolute;
   border-radius: 16px;
-  box-shadow: 0 4px 8px 0 rgba(47, 128, 237, 0.1), 0 0 0 0.5px var(--c-zircon);
+  box-shadow: 0 4px 8px 0 rgba(84, 99, 248, 0.1), 0 0 0 0.5px var(--c-zircon);
   overflow: hidden;
   padding: 0;
   width: 180px;

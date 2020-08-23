@@ -97,7 +97,7 @@ const CustomLink = styled(Link)`
   text-decoration: none;
 
   :visited {
-    color: rgb(47, 128, 237);
+    color: rgb(84, 99, 248);
   }
 `
 
@@ -403,7 +403,7 @@ function TransactionsList({ tokenSymbol, exchangeAddress, price, priceUSD, txFil
         <DataText area={'action'} color="text" fontWeight="500">
           <CustomLink
             ml="3"
-            color="rgb(47, 128, 237)"
+            color="rgb(84, 99, 248)"
             external
             href={urls.showTransaction(transaction.tx.split('-')[0])}
           >
@@ -434,7 +434,7 @@ function TransactionsList({ tokenSymbol, exchangeAddress, price, priceUSD, txFil
           <DataText area={'Account'}>
             <CustomLink
               ml="3"
-              color="rgb(47, 128, 237)"
+              color="rgb(84, 99, 248)"
               external
               href={'https://etherscan.io/address/' + transaction.user}
             >

@@ -58,7 +58,12 @@ html { font-family: 'Source Sans Pro', sans-serif; }
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-
+  a {
+  color: rgba(84, 99, 248);
+  }
+  a:hover{
+  color: rgba(54, 68, 214);
+  }
   .-transition {
     transition-property: background-color, color;
     transition-timing-function: ease;

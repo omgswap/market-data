@@ -10,7 +10,7 @@ const MobileSelect = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   color: white;
 
@@ -35,7 +35,7 @@ const Select = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   color: white;
 
@@ -57,7 +57,7 @@ const SelectOption = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   color: white;
   user-select: none;

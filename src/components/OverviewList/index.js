@@ -86,7 +86,7 @@ const DashGrid = styled.div`
 
 const DashGridClickable = styled(DashGrid)`
   :hover {
-    background-color: #f8f8f8;
+    background-color: #f2f2ff;
     cursor: pointer;
   }
 `
@@ -137,7 +137,7 @@ const CustomLink = styled(Link)`
   text-decoration: none;
 
   &:visited {
-    color: rgb(47, 128, 237);
+    color: rgb(84, 99, 248);
   }
 `
 
@@ -376,7 +376,7 @@ function OverviewList({ currencyUnit, history }) {
                 window.scrollTo(0, 0)
               }}
             >
-              <Text color="rgb(47, 128, 237)" area={'name'} fontWeight="500">
+              <Text color="rgb(84, 99, 248)" area={'name'} fontWeight="600">
                 {exchange.tokenName}
               </Text>
             </CustomLink>

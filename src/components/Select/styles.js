@@ -45,7 +45,6 @@ export const customStyles = {
     ...styles,
     paddingLeft: 16,
     textAlign: 'right',
-    overflow: 'scroll'
   }),
   menuPlacer: styles => ({
     ...styles
@@ -68,7 +67,7 @@ export const customStyles = {
   menu: styles => ({
     ...styles,
     borderRadius: 16,
-    boxShadow: '0 4px 8px 0 rgba(47, 128, 237, 0.1), 0 0 0 0.5px var(--c-zircon)',
+    boxShadow: '0 4px 8px 0 rgba(84, 99, 248, 0.1), 0 0 0 0.5px var(--c-zircon)',
     overflow: 'hidden',
     padding: 0
   }),
@@ -139,7 +138,7 @@ export const customStylesMobile = {
   menu: styles => ({
     ...styles,
     borderRadius: 20,
-    boxShadow: '0 4px 8px 0 rgba(47, 128, 237, 0.1), 0 0 0 0.5px var(--c-zircon)',
+    boxShadow: '0 4px 8px 0 rgba(84, 99, 248, 0.1), 0 0 0 0.5px var(--c-zircon)',
     overflow: 'hidden',
     paddingBottom: '12px'
   }),
@@ -215,7 +214,7 @@ export const customStylesTime = {
   menu: styles => ({
     ...styles,
     borderRadius: 16,
-    boxShadow: '0 4px 8px 0 rgba(47, 128, 237, 0.1), 0 0 0 0.5px var(--c-zircon)',
+    boxShadow: '0 4px 8px 0 rgba(84, 99, 248, 0.1), 0 0 0 0.5px var(--c-zircon)',
     overflow: 'hidden',
     padding: 0
   }),
