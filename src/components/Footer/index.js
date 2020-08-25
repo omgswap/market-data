@@ -6,10 +6,11 @@ import styled from 'styled-components'
 const FlexFooter = styled.div`
   box-sizing: border-box;
   margin: 0;
-  padding: 24px;
+  padding: 18px;
   display: flex;
   background-color: #727fff;
   color: #ffffff;
+  margin-top: 5rem;
 `
 
 const Title = styled.div`
@@ -27,7 +28,7 @@ const Title = styled.div`
 
   #title {
     display: inline;
-    font-size: 0.75rem;
+    font-size: 1rem;
     margin-right: 16px;
     font-weight: 600;
     color: #fff;
@@ -75,7 +76,13 @@ const Footer = () => (
         <h1 id="title">OMGSwap</h1>
       </Link>
       <Link href="https://odex.link/" target="_blank">
-        <h1 id="title">O-DEX</h1>
+        <h1 id="title">ODEX</h1>
+      </Link>
+      <Link href="https://omgswap.link/" target="_blank">
+        <h1 id="title">OMGSwap</h1>
+      </Link>
+      <Link href="https://news.omgswap.in/" target="_blank">
+        <h1 id="title">News</h1>
       </Link>
      </Title>
   </ColT>

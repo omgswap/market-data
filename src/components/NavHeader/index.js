@@ -24,10 +24,10 @@ const Header = styled(Panel)`
 `
 
 const TokenSelect = styled(Select)`
-  width: 160px;
+  width: 180px;
 
   @media screen and (max-width: 40em) {
-    width: 150px;
+    width: 180px;
   }
 `
 
@@ -40,6 +40,8 @@ const NavRight = styled.div`
 
   @media screen and (max-width: 40em) {
     grid-template-columns: auto 160px;
+    margin: 0.75rem;
+    display: block;
   }
 `
 

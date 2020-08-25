@@ -6,6 +6,7 @@ const MobileSelect = styled.div`
   height: 38px;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 20px;
+  margin: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;

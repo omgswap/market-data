@@ -50,6 +50,7 @@ html { font-family: 'Source Sans Pro', sans-serif; }
   html {
     font-size: var(--root-font-size);
     background-color: ${props => props.theme.colors.alabaster};
+    background-image: radial-gradient(55% 55% at 55% 55%,rgb(114 127 255 / 0.15) 0%,rgba(255,255,255,0.05) 100%);
   }
 
   body {
