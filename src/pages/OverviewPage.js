@@ -171,7 +171,7 @@ export const OverviewPage = function({
 
   return (
     <div style={{ marginTop: '0px' }}>
-      <ThemedBackground bg="#727FFF" />
+      <ThemedBackground bg="#283aa0" />
       {globalData ? (
         <DashboardWrapper>
           <TokenHeader>

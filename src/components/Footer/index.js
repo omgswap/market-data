@@ -8,7 +8,7 @@ const FlexFooter = styled.div`
   margin: 0;
   padding: 18px;
   display: flex;
-  background-color: #727fff;
+  background-color: #283aa0;
   color: #ffffff;
   margin-top: 5rem;
 `

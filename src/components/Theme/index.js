@@ -20,7 +20,7 @@ html { font-family: 'Source Sans Pro', sans-serif; }
     Segoe UI Symbol;
 
     /* greys */
-    --c-violet: #727FFF;
+    --c-violet: #283aa0;
     --c-white: #fff;
     --c-alabaster: #FBFBFB;
     --c-zircon: #e1e1e1;
